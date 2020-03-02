@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+I'm a curious software engineer with creatvie mind and willing to accept challenges!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+To know more about me at [andychao217.cn](https://www.andychao217.cn).
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[andychao217@qq.com](mailto:andychao217@qq.com)
