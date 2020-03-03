@@ -89,6 +89,6 @@ theme: jekyll-theme-cayman
 
 encoding: UTF-8
 safe: false
-excerpt_separator: "\n\n\n"
+excerpt_separator: "\n"
 paginate: 5   # 每页显示5篇文章
 paginate_path: /page:num
