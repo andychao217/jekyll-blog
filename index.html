@@ -6,9 +6,21 @@ layout: default
   {% for post in site.posts %}
     <article class="post">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+      <h1 style="text-shadow: 1px 2px lightgrey;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <div class="entry">
+      <div 
+        class="entry" 
+        style="
+          overflow: hidden; 
+          color: gray; 
+          font-style: italic; 
+          margin-bottom: 20px; 
+          background: lightgray; 
+          padding: 10px; 
+          border-radius: 5px;
+          box-shadow: 2px 2px 5px grey;
+        "
+      >
         {{post.content | strip_html | strip_newlines | truncate: 100 }}
       </div>
 
