@@ -91,4 +91,4 @@ encoding: UTF-8
 safe: false
 excerpt_separator: "\n"
 paginate: 5   # 每页显示5篇文章
-paginate_path: /page:num
+paginate_path: "blog/page:num"
