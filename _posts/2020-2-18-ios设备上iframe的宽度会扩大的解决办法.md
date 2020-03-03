@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: iOS设备上iframe的宽度会扩大的解决办法
 ---
 
 ##### 解决办法，就是在iframe加载完成后，设置 iframe里面body的宽度为多少PX。

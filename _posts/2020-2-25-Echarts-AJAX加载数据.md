@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: Echarts Ajax加载数据
 ---
 
 ```

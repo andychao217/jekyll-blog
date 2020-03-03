@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: 使用Navigator.userAgent.toLowerCase()判断移动端类型
 ---
 
 ```javascript

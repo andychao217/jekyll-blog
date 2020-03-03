@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: CSS Reset
 ---
 
 ```

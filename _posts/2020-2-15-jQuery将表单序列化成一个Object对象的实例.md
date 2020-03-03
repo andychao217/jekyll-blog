@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: jQuery将表单序列化成一个Object对象的实例
 ---
 
 ```

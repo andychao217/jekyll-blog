@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: LivePhotosKit JS
 ---
 
 ## Framework

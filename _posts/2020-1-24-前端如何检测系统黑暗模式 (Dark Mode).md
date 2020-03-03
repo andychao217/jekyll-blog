@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: 前端如何检测系统黑暗模式(Dark Mode)
 ---
 
 ## 白天不知夜的黑

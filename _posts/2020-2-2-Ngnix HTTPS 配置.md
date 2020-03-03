@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: Ngnix HTTPS 配置
 ---
 
 # Ngnix HTTPS 配置

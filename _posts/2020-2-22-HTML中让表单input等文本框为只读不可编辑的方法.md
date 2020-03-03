@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cookie
+title: HTML中让表单Input等文本框为只读不可编辑的方法
 ---
 
 ## HTML中让表单input等文本框为只读不可编辑的方法
