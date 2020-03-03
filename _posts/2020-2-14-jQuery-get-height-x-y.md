@@ -5,7 +5,7 @@ title: jQuery里面获取宽度,高度,x,y坐标
 
 ### jQuery里面获取div区块的宽度与高度
 
-```
+```javascript
 获取宽度
 $('div').width();             获取：区块的本身宽度
 $('div').outerWidth();        获取：区块的宽度+padding宽度+border宽度
@@ -19,7 +19,7 @@ $('div').outerHeight(true);   获取：区块的高度+padding高度+border高�
 ### JQuery 获得div绝对,相对位置的坐标方法
 
 
-```
+```javascript
 获取页面某一元素的绝对X,Y坐标
 
 var X = $('#DivID').offset().top;
@@ -31,7 +31,7 @@ var X = $('#DivID').position().top;
 var Y = $('#DivID').position().left;
 ```
 
-```
+```javascript
 onmousemove="getCoords(event, this)"
 
 function getCoords(ev,obj){

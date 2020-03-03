@@ -3,7 +3,7 @@ layout: post
 title: Qt获取分辨率
 ---
 
-```
+```C++
 void GLWidget::getScreenInfo()  //得到当前计算机的屏幕分辨率
 {
     QDesktopWidget* desktopWidget = QApplication::desktop();
@@ -13,7 +13,7 @@ void GLWidget::getScreenInfo()  //得到当前计算机的屏幕分辨率
 }
 ```
 
-```
+```C++
     //得到当前控件相对于屏幕的坐标
     widgetPos = ui->startDateTimeValue->mapToGlobal(ui->startDateTimeValue->pos());
     widgetW = widgetPos.x();

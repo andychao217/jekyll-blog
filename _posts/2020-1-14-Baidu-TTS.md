@@ -3,7 +3,7 @@ layout: post
 title: 百度云TTS文字转语音
 ---
 
-```
+```HTML
 <!DOCTYPE html>
 <html>
     <head>

@@ -3,7 +3,7 @@ layout: post
 title: 查找并显示所有LocalStorage数据
 ---
 
-```
+```javascript
 function findAllLocalStorageItems(){
     var itemList = document.getElementById('itemlist');
     

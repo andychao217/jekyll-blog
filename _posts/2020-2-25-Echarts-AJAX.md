@@ -3,7 +3,7 @@ layout: post
 title: Echarts Ajax加载数据
 ---
 
-```
+```javascript
 echartPie.showLoading();
 echartGauge.showLoading();
 echartBar.showLoading();

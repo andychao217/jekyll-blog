@@ -13,7 +13,7 @@ title: js选择文件夹路径(IE)
 - Options：使用对话框的特殊方式，为长整数，一般设置为0
 - RootFolder：（可选的），用来设置浏览的最顶层文件夹，缺省时为“桌面”，可以将其设置为一个路径或“特殊文件夹常数”
 
-```
+```javascript
 <input id="show">
 <button onclick="clickBtn()">点击</button>
 

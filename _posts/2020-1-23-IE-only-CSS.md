@@ -7,7 +7,7 @@ title: 如何只在IE上加载CSS样式表
 
 可以使用条件注释语句来加载特定于ie的样式表。如下所示，使用外部样式表。
 
-```
+```HTML
 <!--[if IE]>
   <link rel="stylesheet" type="text/css" href="all-ie-only.css" />
 <![endif]-->
@@ -18,7 +18,7 @@ title: 如何只在IE上加载CSS样式表
 使用媒体查询（-ms-high-contrast）来加载样式表。由于-ms-high-contrast是微软特有的(并且只在IE 10+中可用)，所以只能在Internet Explorer 10或更高版本中解析。
 
 
-```
+```CSS
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
      /* IE10+ CSS styles go here */
 }
@@ -27,7 +27,7 @@ title: 如何只在IE上加载CSS样式表
 ## 微软 Edge12 :
 可以使用@supports
 
-```
+```CSS
 @supports (-ms-accelerator:true) {
   /* IE Edge 12+ CSS styles go here */
 }

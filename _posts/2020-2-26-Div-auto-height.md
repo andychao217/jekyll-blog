@@ -3,7 +3,7 @@ layout: post
 title: Div自适应浏览器窗口高度
 ---
 
-```
+```javascript
 autodivheight();  
 function autodivheight(){ //函数：获取尺寸  
 	//获取浏览器窗口高度  

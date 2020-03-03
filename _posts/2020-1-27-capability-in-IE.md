@@ -5,13 +5,13 @@ title: 一行代码解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10
 
 # 一行代码解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10
 
-```HTML
 在网站开发中不免因为各种兼容问题苦恼，针对兼容问题，其实IE给出了解决方案Google也给出了解决方案
 
 百度也应用了这种方案去解决IE的兼容问题
 
 百度源代码如下
 
+```HTML
 <!Doctype html>
  <html xmlns=http://www.w3.org/1999/xhtml xmlns:bd=http://www.baidu.com/2010/xbdml>
  <head>
@@ -20,6 +20,7 @@ title: 一行代码解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10
  <title>百度一下，你就知道 </title>
  <script>var wpo={start:new Date*1,pid:109,page:‘superpage’}</script>
  <meta http-equiv=X-UA-Compatible content=IE=EmulateIE7>
+```
 
 可以打开百度，右键查看源码看下！我们可以看下文件头是否存在这样一行代码！
 
@@ -27,6 +28,7 @@ title: 一行代码解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10
 
 在这里送上几种IE使用模式！
 
+```HTML
 <meta http-equiv=“X-UA-Compatible” content=“IE=8″>
  2. Google Chrome Frame也可以让IE用上Chrome的引擎:
 
@@ -41,9 +43,11 @@ title: 一行代码解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10
 <meta http-equiv=“X-UA-Compatible” content=“IE=6″><!– IE6 mode –> 
 
  <meta http-equiv=“X-UA-Compatible” content=“IE=5″><!– IE5 mode –> 
+
 5.如果一个特定版本的IE支持所要求的兼容性模式多于一种，如：
 
 <meta http-equiv=“X-UA-Compatible” content=“IE=5; IE=8″ />
+```
 二.设定网站服务器以指定预设兼容性模式
 
 如果服务器是自己的话，可以在服务器上定义一个自订标头来为它们的网站预设一个特定的文件兼容性模式。
@@ -58,6 +62,7 @@ ie7 – js中是一个JavaScript库（解决IE与W3C标准的冲突的JS库）�
 
 使IE5,IE6兼容到IE7模式（推荐）
 
+```HTML
 <!–[if lt IE 7]>
  <script src=”http://ie7-js.googlecode.com/svn/version/2.0(beta)/IE7.js” type=”text/javascript”></script>
  <![endif]–>
@@ -71,6 +76,8 @@ ie7 – js中是一个JavaScript库（解决IE与W3C标准的冲突的JS库）�
 <!–[if lt IE 9]>
  <script src=”http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js”></script>
  <![endif]–>
+```
+
 解决PNG显示问题
 
 只需将透明png图片命名为*-trans.png

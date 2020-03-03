@@ -3,7 +3,7 @@ layout: post
 title: iframe高度调节
 ---
 
-```
+```javascript
 startInit('contextframe', 560);
 
 var browserVersion = window.navigator.userAgent.toUpperCase();

@@ -15,3 +15,4 @@ if (/android|adr/gi.test(ua)) {
     //ipad
 
 }
+```

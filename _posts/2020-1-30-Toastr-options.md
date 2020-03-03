@@ -3,7 +3,7 @@ layout: post
 title: Toastr options
 ---
 
-```
+```javascript
 toastr.options = {
 	"closeButton": true,
 	"debug": false,

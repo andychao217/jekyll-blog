@@ -3,7 +3,7 @@ layout: post
 title: 纯CSS仿iOS开关
 ---
 
-```
+```HTML
 <!doctype html>
 <html>
     <head>

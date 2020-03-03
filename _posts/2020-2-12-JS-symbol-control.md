@@ -9,7 +9,7 @@ title: JS中单双竖线运算符的使用
 
 ##### 1、单竖杠“|”运算
 
-```
+```javascript
 console.log(3|4); //7
 console.log(4|4);//4
 console.log(8|3);//11
@@ -31,7 +31,7 @@ console.log(9|3455);//3455
 - 1、JS双竖线运算符:是或比较.如null||'1',返回'1';'2'||'1',返回'2'.即或运算符中,第一个为真,后面的就不用计算了.所以得'2'。
 - 2、js 中 使用双竖线运算符"||",返回第一个有效值
 
-```
+```javascript
 var objOne = undefined || 1 || null || new Date(); 
 var objTwo = new Date(); 
 var objThree = objOne || objTwo; 
@@ -55,11 +55,11 @@ alert(objThree.toString()); //out put "1"
 
 &和|本是位运算符，之所以可以进行"逻辑运算"，是由于JS是无类型的语言、各数据类型可以自由转换这一特性决定的，当用&和|进行"逻辑运算"时，实际上true被转换成1，false被转换成0，再进行逐位运算
 
-```
+```javascript
 document.write(true & false); //JS，结果为0
 ```
 上面这句，实例等同于逻辑运算被转化成下面的位运算，并执行：
-```
+```javascript
 document.write(1 & 0); //JS，结果为0
 ```
 也正是由于&和|是逐位运算符，才出现了第一点中所说的，它们总是要比较两个运算数才得出结果，才导致性能会比&&和||低一些。

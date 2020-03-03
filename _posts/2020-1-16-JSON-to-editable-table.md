@@ -5,7 +5,7 @@ title: 根据JSON数据动态生成表格，并可编辑
 
 JSON
 
-```
+```JSON
 getdata([
     {
         "id": "1", 
@@ -53,7 +53,7 @@ getdata([
 ```
 HTML
 
-```
+```HTML
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -101,11 +101,10 @@ HTML
 		<script  src="4.json?callback=getdata"></script>
 	</body>
 </html>
-
 ```
 JavaScript
 
-```
+```javascript
 // JavaScript Document
 
 var bgColor;

@@ -3,7 +3,7 @@ layout: post
 title: HTML5中Drag & Drop拖曳效果的用法
 ---
 
-```
+```HTML
 缺乏对clearData() dropEffect() effectAllowed()的理解
 
 eg1:

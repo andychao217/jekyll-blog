@@ -8,7 +8,7 @@ title: LocalStorage & SessionStorage
 - 如果你想要操作一个域名的会话存储（session storage），可以使用 window.sessionStorage如果想要操作一个域名的本地存储（local storage），可以使用  window.localStorage。
 - sessionStorage和localStorage的用法是一样的，区别在于sessionStorage会在会话关闭也就是浏览器关闭时失效，而localStorage是将数据存储在本地，不受关闭浏览器影响，除非手动清除数据
 
-```
+```javascript
 (function IIFE(){
     if(!window.localStorage){
         alert('your browser is not support localStorage!');

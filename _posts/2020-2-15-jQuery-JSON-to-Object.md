@@ -3,7 +3,7 @@ layout: post
 title: jQuery将表单序列化成一个Object对象的实例
 ---
 
-```
+```javascript
 (function($){ 
   $.fn.extend({ 
     serializeObject:function(){ 
@@ -27,7 +27,7 @@ $(":button").click(function(){
 ```
 
 
-```
+```HTML
 <body>
     <form action="" method="get">
         <input name="id" type="hidden" value="110" />

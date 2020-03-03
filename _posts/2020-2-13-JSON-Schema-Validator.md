@@ -3,7 +3,7 @@ layout: post
 title: JSON Schema 验证
 ---
 
-```
+```JSON
 {
   "$schema": "http://json-schema.org/draft-06/schema#",  //schema验证版本
   "title": "Cat",   //json标题

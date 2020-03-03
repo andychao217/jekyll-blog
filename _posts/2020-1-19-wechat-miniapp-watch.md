@@ -16,7 +16,7 @@ Vue 的 computed 和 watch 可以很方便的检测数据的变化，从而做�
 ## 代码
 不啰嗦，上代码，真实可用。
 
-```
+```javascript
 function observe(obj, key, watchFun, deep, page) {
   let val = obj[key];
 
@@ -70,7 +70,7 @@ export function setWatcher(page) {
 
 ## 使用
 
-```
+```javascript
 import * as watch from "./watch.js";
 
 Page({

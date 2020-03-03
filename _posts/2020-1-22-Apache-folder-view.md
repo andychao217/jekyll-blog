@@ -74,7 +74,7 @@ LoadModule autoindex_module modules/mod_autoindex.so
 
 ==header.html==
 
-```
+```HTML
 <!Doctype html>
 <html lang="en">
 <head>
@@ -138,7 +138,7 @@ LoadModule autoindex_module modules/mod_autoindex.so
 ```
 ==footer.html==
 
-```
+```HTML
     <h3> Power by Mr.CG<h3>
 </body>
 </html>

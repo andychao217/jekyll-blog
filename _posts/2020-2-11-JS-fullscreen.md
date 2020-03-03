@@ -3,11 +3,12 @@ layout: post
 title: JS控制全屏
 ---
 
-```
+```HTML
 <div id="fullscreen_btn" class="btn-group">
     <a id="fullScreen" class="btn btn-link" onclick="fullscreen()" ><i class="fa fa-expand fa-2x"></i></a>
 </div>
-
+```
+```javascript
 if (!!window.ActiveXObject || "ActiveXObject" in window) {
     document.getElementById('fullscreen_btn').style.display = 'none';
 }else{

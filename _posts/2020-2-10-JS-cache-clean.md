@@ -21,7 +21,7 @@ css和js带参数（形如.css?t=与.js?t=）
 
 - meta方法
 
-```
+```HTML
 <META HTTP-EQUIV="pragma" CONTENT="no-cache"> 
 <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate"> 
 <META HTTP-EQUIV="expires" CONTENT="0">
@@ -30,7 +30,7 @@ css和js带参数（形如.css?t=与.js?t=）
 - 清理form表单的临时缓存 
 1. 方式一：用ajax请求服务器最新文件，并加上请求头If-Modified-Since和Cache-Control,如下:
 
-```
+```javascript
 $.ajax({
      url:'www.haorooms.com',
      dataType:'json',
@@ -48,7 +48,7 @@ $.ajax({
 
 2. 方法二，直接用cache:false,
 
-```
+```javascript
 $.ajax({
      url:'www.haorooms.com',
      dataType:'json',
@@ -65,7 +65,7 @@ $.ajax({
 
 3. 方法三：用随机数，随机数也是避免缓存的一种很不错的方法！
 
-```
+```javascript
 URL 参数后加上 "?ran=" + Math.random(); //当然这里参数 ran可以任意取了
 
 <script> 
@@ -79,23 +79,24 @@ document.write("<s"+"cript type='text/javascript' src='/js/test.js?"+Math.random
 4. 方法四：
 - 用随机时间，和随机数一样。
 
-```
+```javascript
 在 URL 参数后加上 "?timestamp=" + new Date().getTime();
 ```
 - 用PHP后端清理
 
-```
+```javascript
 在服务端加 header("Cache-Control: no-cache, must-revalidate");等等(如php中)
 ```
 
 5. 方法五：
-```
+```javascript
 window.location.replace("WebForm1.aspx");   
 参数就是你要覆盖的页面，replace的原理就是用当前页面替换掉replace参数指定的页面。   
 这样可以防止用户点击back键。使用的是javascript脚本，举例如下： 
 
 a.html 
 以下是引用片段： 
+```HTML
 <html> 
      <head> 
          <title>a</title>      
@@ -109,9 +110,11 @@ a.html
         <a href="javascript:jump()">b</a> 
     </body> 
 </html>  
-
+```
 b.html 
 以下是引用片段： 
+
+```HTML
 <html> 
      <head> 
          <title>b</title>      

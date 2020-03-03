@@ -3,7 +3,7 @@ layout: post
 title: iView的表格如何单击这行就选中
 ---
 
-```
+```HTML
 <Table 
     border 
     ref="table" 
@@ -13,7 +13,8 @@ title: iView的表格如何单击这行就选中
     @on-selection-change="SelectGoods"
 >
 </Table>
-
+```
+```javascript
 rowClick(data,index){
     this.$refs.table.toggleSelect(index);
 }

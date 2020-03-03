@@ -3,7 +3,7 @@ layout: post
 title: Bind()辅助函数
 ---
 
-```
+```javascript
 function foo(somethine){
     console.log(this.a, something);
     return this.a + something;

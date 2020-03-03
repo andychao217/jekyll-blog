@@ -93,7 +93,7 @@ flv.js 为什么要绕一圈，从服务器获取FLV再解码转换后再喂给V
 - 减少浏览器端flv.js的buffer可以优化延迟，坏处是浏览器端处理效率降低。
 - 浏览器端开启flv.js的Worker，多线程运行flv.js提升解析速度可以优化延迟，这样做的flv.js配置代码是：
 
-```
+```javascript
 {
           enableWorker: true,
           enableStashBuffer: false,
@@ -103,7 +103,7 @@ flv.js 为什么要绕一圈，从服务器获取FLV再解码转换后再喂给V
 
 完整示例代码
 
-```
+```HTML
 <!doctype html>
 <html lang="zh">
 

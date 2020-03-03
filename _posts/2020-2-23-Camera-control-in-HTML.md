@@ -7,7 +7,7 @@ title: HTML5拍照,摄像机功能实战
 HTML5的getUserMedia API为用户提供访问硬件设备媒体（摄像头、视频、音频、地理位置等）的接口，基于该接口，开发者可以在不依赖任何浏览器插件的条件下访问硬件媒体设备。
 
 1. 获取视频流，并用video标签播放。
-```
+```javascript
     <video id="video" autoplay></video>
     
     --------------------------------------------------------------
@@ -21,7 +21,7 @@ HTML5的getUserMedia API为用户提供访问硬件设备媒体（摄像头、�
 ```
 2. 多个摄像头设备，如何切换？
 
-```
+```javascript
     // enumerateDevices获取所有媒体设备
     const mediaDevices = await navigator.mediaDevices.enumerateDevices();
     // 通过设备实例king属性videoinput，过滤获取摄像头设备
@@ -41,7 +41,7 @@ HTML5的getUserMedia API为用户提供访问硬件设备媒体（摄像头、�
 
 3. 拍照保存图片
 
-```
+```javascript
     // 通过canvas捕捉video流，生成base64格式图片
     const canvas = document.createElement('canvas');
     const context = canvas.getContext('2d');
@@ -62,7 +62,7 @@ HTML5的getUserMedia API为用户提供访问硬件设备媒体（摄像头、�
 
 4. 关闭摄像头设备
 
-```
+```javascript
     let stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: videoConstraints });
     // 3s后关闭摄像头
     setTimeout(function () {
@@ -77,7 +77,7 @@ HTML5的getUserMedia API为用户提供访问硬件设备媒体（摄像头、�
 
 ==注意：摄像预览播放器video标签要设置静音muted（消除回声导致的刺耳噪音）==
 
-```
+```javascript
     const videoConstraints = { width: 1366, height: 768 };
     let stream = await navigator.mediaDevices.getUserMedia({ audio: true, video: videoConstraints });
     let mediaRecorder = new MediaRecorder(stream);

@@ -6,13 +6,13 @@ title: iOS设备上iframe的宽度会扩大的解决办法
 ##### 解决办法，就是在iframe加载完成后，设置 iframe里面body的宽度为多少PX。
 
 
-```
+```javascript
 $("#iframe1")[0].onload = function () {
     iosIframeWidthBug();
 }
 ```
 
-```
+```javascript
 /*修复ios iframe width bug*/
 function iosIframeWidthBug(){
     //不是 iphone ipad就不执行了

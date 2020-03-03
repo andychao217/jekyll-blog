@@ -19,7 +19,7 @@ media query 为开发者提供了系统主题检测的属性：prefers-color-sch
 从值上很容易理解这个属性的作用，我们只要考虑如何使用即可：
 
 ### CSS
-```
+```CSS
 /* light mode */
 @media (prefers-color-scheme: light) {
   body {
@@ -37,7 +37,7 @@ media query 为开发者提供了系统主题检测的属性：prefers-color-sch
 ```
 
 ### JavaScript
-```
+```javascript
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
   // dark mode
 }

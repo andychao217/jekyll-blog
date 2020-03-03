@@ -3,13 +3,13 @@ layout: post
 title: 获取今天日期
 ---
 
-```
+```javascript
  var day1 = new Date();
 3  day1.setDate(day1.getDate() - 1);
 4  var s1 = day1.format("yyyy-MM-dd");
 ```
 
-```
+```javascript
 /**
  *对Date的扩展，将 Date 转化为指定格式的String
  *月(M)、日(d)、小时(h)、分(m)、秒(s)、季度(q) 可以用 1-2 个占位符，
