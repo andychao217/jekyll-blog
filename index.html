@@ -9,6 +9,7 @@ layout: default
       <h1 style="text-shadow: 1px 1px lightgrey;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
       <div 
+        title="{{ post.title }}"
         class="entry" 
         style="
           overflow: hidden; 
@@ -25,8 +26,8 @@ layout: default
         {{post.content | strip_html | strip_newlines | truncate: 100 }}
       </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">
-        <span style="float: left;" title="{{ post.title }}">
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more" title="{{ post.title }}">
+        <span style="float: left;">
           Read More
         </span>
         <div class="date" style="float: right;">
