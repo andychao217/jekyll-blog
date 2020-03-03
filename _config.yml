@@ -86,3 +86,6 @@ exclude:
   - CNAME
 
 theme: jekyll-theme-cayman
+
+paginate: 5   # 每页显示5篇文章
+paginate_path: “/page:num”
