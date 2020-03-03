@@ -8,26 +8,11 @@ layout: default
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-      <!-- <div class="entry">
-        {{ post.excerpt }}
-      </div> -->
+      <div class="entry">
+        {{ post.date | date: "%B %e, %Y" }}
+      </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
-</div>
-
-<!-- 分页链接 -->
-<div class="pagination">
-  {% if paginator.previous_page %}
-    <a href="/page{{ paginator.previous_page }}" class="previous">&lt;</a>
-  {% else %}
-    <span class="previous">&lt;</span>
-  {% endif %}
-  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  {% if paginator.next_page %}
-    <a href="/page{{ paginator.next_page }}" class="next">&gt;</a>
-  {% else %}
-    <span class="next ">&gt;</span>
-  {% endif %}
 </div>
