@@ -87,5 +87,8 @@ exclude:
 
 theme: jekyll-theme-cayman
 
+safe: false
+pygments: true
+excerpt_separator: "\n\n\n"
 paginate: 5   # 每页显示5篇文章
 paginate_path: “/page:num”
