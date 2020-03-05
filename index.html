@@ -25,7 +25,7 @@ layout: default
           font-size: 14px;
         "
       >
-        {{post.content | strip_html | strip_newlines | truncate: 100 }}
+        {{post.content | strip_html | strip_newlines | truncate: 200 }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more" title="{{ post.title }}">
