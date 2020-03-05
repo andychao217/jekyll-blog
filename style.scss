@@ -300,6 +300,22 @@ footer {
 a.paginator-mark:hover {
   text-decoration: none;
 }
+
+button.backToTopBtn {
+  color: #2fc6ed;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border: none;
+  background: transparent;
+  opacity: 0.95;
+  z-index: 9999;
+  position: fixed;
+  right: 25px;
+  bottom: 60px;
+  font-size: 45px;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
