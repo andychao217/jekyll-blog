@@ -319,6 +319,23 @@ a.paginator-mark:hover {
 .backToTopBtn:hover {
   text-decoration: none !important;
 }
+
+//scrollbar
+body::-webkit-scrollbar{
+  /*滚动条整体样式*/
+  width: 5px;
+  height: 1px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background: lightgray;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: #ededed;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
