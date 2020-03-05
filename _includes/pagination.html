@@ -13,12 +13,16 @@
     {% else %}
         <!-- <span class="previous">Previous</span> -->
     {% endif %}
+
+    {% if paginator.previous_page && paginator.next_page %}
         <span 
             class="post-category" 
             style="line-height: 50px; font-size: 24px;"
         >
             {{ paginator.page }} of {{ paginator.total_pages }}
         </span>
+    {% endif %}
+    
     {% if paginator.next_page %}
         <span class="comments-link">
             <a  class="paginator-mark" 
