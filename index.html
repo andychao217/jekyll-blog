@@ -6,7 +6,9 @@ layout: default
   {% for post in paginator.posts %}
     <article class="post">
 
-      <h2 style="text-shadow: 1px 1px lightgrey; color: black;"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+      <a class="postTitle" href="{{ site.baseurl }}{{ post.url }}">
+        {{ post.title }}
+      </a>
 
       <div 
         title="{{ post.title }}"
