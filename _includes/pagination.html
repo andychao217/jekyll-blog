@@ -1,13 +1,13 @@
 <!-- 分页链接 -->
 <div class="entry-meta" style="text-align: center; margin-top: 20px;">
     {% if paginator.previous_page %}
-        <span class="post-category"><a href="{{ paginator.previous_page_path }}">&lt;&lt;</a></span>
+        <span class="post-category"><a class="paginator-mark" style="float: left;" href="{{ paginator.previous_page_path }}">&lt; Prev</a></span>
     {% else %}
         <!-- <span class="previous">Previous</span> -->
     {% endif %}
-        <span class="post-category">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+        <span class="post-category" style="line-height: 50px; font-size: 24px;">{{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-        <span class="comments-link"><a href="{{ paginator.next_page_path }}">&gt;&gt;</a></span>
+        <span class="comments-link"><a class="paginator-mark" style="float: right;" href="{{ paginator.next_page_path }}">&gt; Next</a></span>
     {% else %}
         <!-- <span class="comments-link ">Next</span> -->
     {% endif %}

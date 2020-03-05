@@ -286,6 +286,17 @@ footer {
   text-align: center;
 }
 
+.paginator-mark {
+  width: 120px;
+  height: 50px;
+  border-radius: 5px;
+  line-height: 50px;
+  font-size: 24px;
+  background-color: #159957;
+  background-image: linear-gradient(120deg, #155799, #159957);
+  color: white;
+  text-decoration: none;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
