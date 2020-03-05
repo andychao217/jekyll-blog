@@ -81,13 +81,22 @@
       </div>
     </div>
 
+    <div>
+      <button title="Back to top" class="backToTopBtn" onclick="backToTop()">🡅</button>
+    </div>
     <!-- jQuery -->
     <script src="//cdn.bootcss.com/jquery/2.2.2/jquery.min.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="//cdn.bootcss.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="{{ "/search/js/bootstrap3-typeahead.min.js" | prepend: site.baseurl }}"></script>
     <script src="{{ "/search/js/cb-search.js" | prepend: site.baseurl }}"></script>
-
+    <script>
+      function backToTop() {
+        $('html, body').animate({                     // Animation effects --> move
+            scrollTop: 0
+        }, 500);
+      }
+    </script>
     {% include analytics.html %}
   </body>
 </html>
