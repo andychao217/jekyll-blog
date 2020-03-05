@@ -7,7 +7,7 @@
     {% endif %}
         <span class="post-category" style="line-height: 50px; font-size: 24px;">{{ paginator.page }} of {{ paginator.total_pages }}</span>
     {% if paginator.next_page %}
-        <span class="comments-link"><a class="paginator-mark" style="float: right;" href="{{ paginator.next_page_path }}">&gt; Next</a></span>
+        <span class="comments-link"><a class="paginator-mark" style="float: right;" href="{{ paginator.next_page_path }}">Next &gt;</a></span>
     {% else %}
         <!-- <span class="comments-link ">Next</span> -->
     {% endif %}
